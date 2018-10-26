@@ -92,6 +92,7 @@ html {
 
 #mapid {
   height: 600px;
+  z-index: 0;
 }
 
 .title {
@@ -114,4 +115,22 @@ html {
 
 .card-item {
   color: white;
+}
+
+#refreshButton {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  z-index: 5000;
+  
+
+
+}
+
+#zoomButton {
+  width:200px;
+  height:40px;
+
 }
