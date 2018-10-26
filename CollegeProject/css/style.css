@@ -1,48 +1,117 @@
-body, html {
-    height: 100%;
-    
+body,
+html {
+  height: 100%;
 }
 
 .stadiumBackground {
-    background-image: url(img/stadium.jpg);
-    height:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/stadium.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .stadiumInfo {
-    height:200px;
-    background-color: white;
-    width:auto;
+  height: 200px;
+  background-color: white;
+  width: auto;
 }
 
 .stadiumCard {
-    max-height: 400px;
+  max-height: 400px;
+  background: transparent;
 }
 
 .card-container {
-    text-align: center;
-    padding-top:50px;
-    
+  text-align: center;
+  padding-top: 50px;
 }
 
-.stadium_name {
-    padding-bottom:30px;
-    text-align: center;
-    margin: 0 auto;
-    font-size:22px;
+#stadium_name {
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#stadium_description {
+  padding: 10px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+#stadium_name2 {
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#stadium_description2 {
+  padding: 10px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+#stadium_name3 {
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#stadium_description3 {
+  padding: 10px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+#stadium_name4 {
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#stadium_description4 {
+  padding: 10px;
+  font-size: 15px;
+  overflow-wrap: break-word;
 }
 
 .stadium_icon {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom:20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.stadium_description {
-    padding:10px;
+#mapid {
+  height: 600px;
 }
 
-#mapid { height: 600px; }
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
 
+.items {
+  padding-top: 30px;
+}
+
+.title h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.card-item {
+  color: white;
+}
