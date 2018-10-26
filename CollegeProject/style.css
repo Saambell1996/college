@@ -1,0 +1,14 @@
+body, html {
+ height: 100%;
+}
+
+.stadiumBackground { 
+    /* The image used */
+    background-image: url("/css/img/stadium.jpg");
+
+    /* Full height */
+    height:2000px;
+
+    /* Center and scale the image nicely */
+  
+    background-size: cover;

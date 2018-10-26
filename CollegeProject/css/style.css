@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    
+}
+
+.stadiumBackground {
+    background-image: url(img/stadium.jpg);
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.stadiumInfo {
+    height:200px;
+    background-color: white;
+    width:auto;
+}
+
+.stadiumCard {
+    max-height: 400px;
+}
+
+.card-container {
+    text-align: center;
+    padding-top:50px;
+    
+}
+
+.stadium_name {
+    padding-bottom:30px;
+    text-align: center;
+    margin: 0 auto;
+    font-size:22px;
+}
+
+.stadium_icon {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom:20px;
+}
+
+.stadium_description {
+    padding:10px;
+}
+
+#mapid { height: 600px; }
+
