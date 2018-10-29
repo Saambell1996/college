@@ -10,7 +10,7 @@ window.onload = function() {
       .setContent(
         "Find out more about this Stadium at" +
           "<br>" +
-          '<a href="stadiumoflight.html">Stadium Of Light</a>"'
+          '<a href="/Stadium_pages/sunderlandStadium.html">Stadium Of Light</a>"'
       )
       .openOn(mymap);
   }
@@ -23,7 +23,7 @@ window.onload = function() {
       .setContent(
         "Find out more about this Stadium at" +
           "<br>" +
-          '<a href="stadiumoflight.html">Newcastle Stadium</a>"'
+          '<a href="/Stadium_pages/newcastleStadium.html">Newcastle Stadium</a>"'
       )
       .openOn(mymap);
   }
@@ -36,7 +36,7 @@ window.onload = function() {
       .setContent(
         "Find out more about this Stadium at" +
           "<br>" +
-          '<a href="stadiumoflight.html">Manchester United Stadium</a>"'
+          '<a href="/Stadium_pages/manchesterUtdStadium.html">Manchester United Stadium</a>"'
       )
       .openOn(mymap);
   }
@@ -49,7 +49,7 @@ window.onload = function() {
       .setContent(
         "Find out more about this Stadium at" +
           "<br>" +
-          '<a href="stadiumoflight.html">Aresenal Stadium</a>"'
+          '<a href="/Stadium_pages/arsenalStadium.html">Aresenal Stadium</a>"'
       )
       .openOn(mymap);
   }
@@ -62,7 +62,7 @@ window.onload = function() {
       .setContent(
         "Find out more about this Stadium at" +
           "<br>" +
-          '<a href="stadiumoflight.html">Chelsea Stadium</a>"'
+          '<a href="/Stadium_pages/chelseaStadium.html">Chelsea Stadium</a>"'
       )
       .openOn(mymap);
   }
@@ -76,7 +76,7 @@ window.onload = function() {
       .setContent(
         "Find out more about this Stadium at" +
           "<br>" +
-          '<a href="stadiumoflight.html">Manchester City Stadium</a>"'
+          '<a href="/Stadium_pages/manchesterCtyStadium.html">Manchester City Stadium</a>"'
       )
       .openOn(mymap);
   }
@@ -89,7 +89,7 @@ window.onload = function() {
       .setContent(
         "Find out more about this Stadium at" +
           "<br>" +
-          '<a href="stadiumoflight.html">Everton Football Stadium</a>"'
+          '<a href="/Stadium_pages/evertonStadium.html">Everton Football Stadium</a>"'
       )
       .openOn(mymap);
   }
