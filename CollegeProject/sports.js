@@ -8,19 +8,22 @@ fetch(req)
   })
   .then(function(res) {
     console.log(res);
-    document.getElementById("stadium_name").innerHTML = (res.articles[0].title);
-    document.getElementById("stadium_description").innerHTML = (res.articles[0].content);
+    let data = res['articles'];
+    console.log("total records: " + data.length)
+    let string = '';
 
-    document.getElementById("stadium_name2").innerHTML = (res.articles[1].title);
-    document.getElementById("stadium_description2").innerHTML = (res.articles[1].content);
-
-    document.getElementById("stadium_name3").innerHTML = (res.articles[2].title);
-    document.getElementById("stadium_description3").innerHTML = (res.articles[2].content);
-
-    document.getElementById("stadium_name4").innerHTML = (res.articles[3].title);
-    document.getElementById("stadium_description4").innerHTML = (res.articles[3].content);
-
+    var div = document.getElementById('articles');
     
+
+      for(let i= 0; i < data.length; i++){
+        string += '<div class="item">';
+          string += '<div class="article_title">' + data[i]['title'] + '</div>';
+          string += '<div class="article_author">' + data[i]['author'] + '</div>';
+          string += '<div class="article_content">' + data[i]['content'] + '</div>';
+        string += '</div>';
+      }
+
+    div.innerHTML += string;    
 
   });
 

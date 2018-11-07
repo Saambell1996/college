@@ -135,3 +135,29 @@ html {
   height:40px;
 
 }
+
+.item{
+  margin-top:30px;
+  box-shadow: 2px 2px 2px 2px #cecece;
+  padding:20px;
+}
+
+.item:hover{
+  margin-top:30px;
+  box-shadow: 4px 4px 4px 4px #cecece;
+  transition:0.3s;
+  padding:20px;
+}
+
+.article_title {
+font-weight:bold;
+height:30px;
+}
+
+.article_author {
+font-style: italic;
+}
+
+.article_content {
+font-size:15px;
+}
