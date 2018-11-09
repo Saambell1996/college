@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+
 }
 
 .stadiumBackground {
@@ -20,7 +21,7 @@ html {
 
 .stadiumCard {
   max-height: 400px;
-  background: transparent;
+
 }
 
 .card-container {
@@ -91,9 +92,10 @@ html {
 }
 
 #mapid {
-  height: 600px;
+  height: 100%;
   z-index: 0;
   width:100%;
+ 
 }
 
 .title {
