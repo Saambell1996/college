@@ -1,11 +1,21 @@
 body,
 html {
   height: 100%;
+
 }
 
 .stadiumBackground {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("img/stadium.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stadiumBackgroundMap {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("img/stadium2.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,9 +30,22 @@ html {
 
 .stadiumCard {
   max-height: 400px;
-  background: transparent;
+  box-shadow: 3px 3px 3px #cecece;
+  -webkit-transition:all 0.2s ease-out;
+  -moz-transition:all 0.2s ease-out;
+  -ms-transition:all 0.2s ease-out;
+  -o-transition:all 0.2s ease-out;
+  transition:all 0.2s ease-out;
+
 }
 
+.stadiumCard:hover {
+  -webkit-transform:scale(1.03);
+  -moz-transform:scale(1.03);
+  -ms-transform:scale(1.03);
+  -o-transform:scale(1.03);
+  transform:scale(1.03);
+}
 .card-container {
   text-align: center;
   padding-top: 50px;
@@ -91,7 +114,10 @@ html {
 }
 
 #mapid {
-  height: 600px;
+  height: 100%;
+  z-index: 0;
+  width:100%;
+ 
 }
 
 .title {
@@ -112,6 +138,105 @@ html {
   color: white;
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
 .card-item {
   color: white;
 }
+
+#refreshButton {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  z-index: 5000;
+  
+
+
+}
+
+#zoomButton {
+  width:200px;
+  height:40px;
+
+}
+
+.item{
+  margin-top:30px;
+  box-shadow: 2px 2px 2px 2px #cecece;
+  padding:20px;
+  background-color: white;
+
+  -webkit-transition:all 0.3s ease-out;
+  -moz-transition:all 0.3s ease-out;
+  -ms-transition:all 0.3s ease-out;
+  -o-transition:all 0.3s ease-out;
+  transition:all 0.3s ease-out;
+}
+
+.item-dark{
+  margin-top:30px;
+  box-shadow: 2px 2px 2px 2px #cecece;
+  padding:20px;
+  background-color: white!important;
+  
+ 
+
+}
+
+.item:hover{
+  margin-top:30px;
+  transition:0.3s;
+  padding:20px;
+  -webkit-transform:scale(1.03);
+  -moz-transform:scale(1.03);
+  -ms-transform:scale(1.03);
+  -o-transform:scale(1.03);
+  transform:scale(1.03);
+  box-shadow: 1px 1px 1px 1px #cecece;
+}
+
+.article_title {
+font-weight:bold;
+height:30px;
+}
+
+.article_author {
+font-style: italic;
+}
+
+.article_content {
+font-size:15px;
+}
+
+.stadium-details {
+  margin-top:300px;
+  padding:50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
