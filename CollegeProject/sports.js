@@ -23,6 +23,7 @@ fetch(req)
           string += '<div class="article_author">' + data[i]['author'] + '</div>';
           string += '<div class="article_date">' + data[i]['publishedAt'] + '</div>';
           string += '<div class="article_content">' + data[i]['content'] + '</div>';
+    
         string += '</div>';
 
         

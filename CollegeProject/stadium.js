@@ -94,6 +94,33 @@ window.onload = function() {
       .openOn(mymap);
   }
 
+  
+  function ccfClick(e) {
+    var ccfPopUp = L.popup();
+    mymap.flyTo([51.4728, -3.2030], 17);
+    ccfPopUp
+      .setLatLng(e.latlng)
+      .setContent(
+        "Find out more about this Stadium at" +
+          "<br>" +
+          '<a href="/Stadium_pages/cardifStadium.html">Cardiff City Football Stadium</a>"'
+      )
+      .openOn(mymap);
+  }
+
+  function nfcClick(e) {
+    var nfcPopUp = L.popup();
+    mymap.flyTo([52.6221, 1.3092], 17);
+    nfcPopUp
+      .setLatLng(e.latlng)
+      .setContent(
+        "Find out more about this Stadium at" +
+          "<br>" +
+          '<a href="/Stadium_pages/cardifStadium.html">Norwich Stadium</a>"'
+      )
+      .openOn(mymap);
+  }
+
   document.getElementById("zoomButton").onclick = function() {
     refreshZoom();
   };
@@ -236,4 +263,35 @@ window.onload = function() {
     .addTo(mymap)
     .on("click", efcClick);
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //CCF
+  var ccfMarker = L.marker;
+  var ccfIcon = L.icon({
+    iconUrl: "img/ccf.png",
+
+    iconSize: iconSize, // size of the icon
+    iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
+    popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+  });
+
+  ccfMarker([51.4728, -3.2030], { icon: ccfIcon })
+    .addTo(mymap)
+    .on("click", ccfClick);
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //NFC
+    var nfcMarker = L.marker;
+    var nfcIcon = L.icon({
+      iconUrl: "img/nfc.png",
+  
+      iconSize: iconSize, // size of the icon
+      iconAnchor: [10, 25], // point of the icon which will correspond to marker's location
+      popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+    });
+  
+    nfcMarker([52.6221, 1.3092], { icon: nfcIcon })
+      .addTo(mymap)
+      .on("click", nfcClick);
+
+
+  
 };
