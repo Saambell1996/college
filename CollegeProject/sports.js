@@ -13,19 +13,38 @@ fetch(req)
     let string = '';
   
 
-    var div = document.getElementById('articles');
+    var div = document.getElementById('articles-container');
     
    
 
       for(let i= 0; i < data.length; i++){
-        string += '<div class="item">';
+    
+     //  string += '<div class="row">';
+          string += '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 d-flex align-items-stretch">';
+          string += '<div class="item">';
+          string += '<div class="article_image_container">';
+          string += '<img class="article_image img-fluid"src=' + '"' + data[i]['urlToImage'] + '"' + '>';
+          string += '</div>';
           string += '<div class="article_title">' + data[i]['title'] + '</div>';
           string += '<div class="article_author">' + data[i]['author'] + '</div>';
           string += '<div class="article_date">' + data[i]['publishedAt'] + '</div>';
           string += '<div class="article_content">' + data[i]['content'] + '</div>';
-    
-        string += '</div>';
+          string += '<a href=' + '"' + data[i]['url'] + '"' + '>' + 'Click to read full article...' + '</a>';
 
+          string += '</div>';
+          string += '</div>';
+        
+         
+
+     //     string += '</div>';
+     
+        
+
+
+      
+        
+
+ 
         
        
    

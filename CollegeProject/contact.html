@@ -5,10 +5,10 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Stadium.io</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/stadiumImages.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/leaflet-search.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stadiumImages.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/leaflet-search.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
@@ -64,51 +64,50 @@
         </ul>
       </div>
     </nav>
-    <div class="arsenal-bg">
+    <div class="contactUsBackground">
       <div class="title">
-        <h1>Emirates Stadium</h1>
-        <div class="container">
-          <div class="items">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card-item">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-item">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-              </div>
+        <h1>Contact Us</h1>
+        <div class="form-container">
+          <form class="contact-form">
+            <label for="fname"
+              ><span class="white_text">First Name</span></label
+            >
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your Name.."
+            />
 
-              <div class="col-md-4">
-                <div class="card-item">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            <label for="lname"><span class="white_text">Last Name</span></label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your Last Name.."
+            />
+
+            <label for="country"><span class="white_text">Country</span></label>
+            <select id="country" name="country">
+              <option value="australia">United Kingdom</option>
+              <option value="canada">USA</option>
+              <option value="usa">Spain</option>
+            </select>
+            <br /><br />
+
+            <label for="subject"><span class="white_text">Subject</span></label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write Something.."
+              style="height:200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     </div>
-    <script src="../backtotop.js" type="text/javascript"></script>
+    <script src="backtotop.js" type="text/javascript"></script>
   </body>
 </html>
